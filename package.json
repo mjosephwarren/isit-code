@@ -1,5 +1,5 @@
 {
-  "name": "isit-code",
+  "name": "isit-code-warren",
   "version": "1.0.0",
   "description": "Code samples and utilities.",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/charliecalvert/JsObjects.git"
+    "url": "git+ssh://git@github.com:mjosephwarren/isit-code-warren.git"
   },
   "keywords": [
     "Elvenware",
     "npm",
     "test"
   ],
-  "author": "Charlie Calvert",
+  "author": "Michael Warren",
   "license": "MIT",
   "dependencies": {
     "debug": "^3.1.0",
