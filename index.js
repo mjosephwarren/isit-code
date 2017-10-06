@@ -12,7 +12,7 @@ exports.walker = require('./walker');
 
 exports.getPackageDescription = function() {
     'use strict';
-    var myDescription = 'This is Charlie Calvert\'s ElvenCode package';
+    var myDescription = 'This is Michael Warren\'s package';
     console.log(myDescription);
     return myDescription;
 };
