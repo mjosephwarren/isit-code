@@ -24,7 +24,7 @@ describe('test elven-config suite', function() {
         elfConfig.useLocalConfig = false;
         elfConfig.loadAsync()
             .then(function(data) {
-                expect(data.users.calvert['base-dir']).toBe('/home/charlie/');
+                expect(data.users.calvert['base-dir']).toBe('/home/bcuser/');
                 expect(data.users.calvert['bootswatch']).toBeDefined();
                 expect(data.users.calvert['most-recent-date']).toBeDefined();
                 expect(data.users.calvert['site-dirs']).toBeDefined();
@@ -70,7 +70,7 @@ describe('test elven-config suite', function() {
             .then(function(config) {
                 const keys = Object.keys(config.users.calvert);
                 console.log(keys);
-                expect(config.users.calvert['base-dir']).toBe('/home/charlie/');
+                expect(config.users.calvert['base-dir']).toBe('/home/bcuser/');
             })
             .catch(errorHandler)
             .then(done);
@@ -80,7 +80,7 @@ describe('test elven-config suite', function() {
         elfConfig.loadAsync()
             .then(function() {
                 const dir = elfConfig.get('users', 'calvert', 'base-dir');
-                expect(dir).toBe('/home/charlie/');
+                expect(dir).toBe('/home/bcuser/');
             })
             .catch(errorHandler)
             .then(done);
@@ -89,7 +89,7 @@ describe('test elven-config suite', function() {
     it('shows we can set the calvert base dir', (done) => {
         elfConfig.loadAsync()
             .then(function(config) {
-                expect(config.users.calvert['base-dir']).toBe('/home/charlie/');
+                expect(config.users.calvert['base-dir']).toBe('/home/bcuser/');
                 const dir = elfConfig.set('/home/bcuser/', 'users', 'calvert', 'base-dir');
                 expect(config.users.calvert['base-dir']).toBe('/home/bcuser/');
             })
